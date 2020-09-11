@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageViewBadge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/top_learner_badge"
+            app:srcCompat="@drawable/top_learner" />
+
+        <TextView
+            android:id="@+id/textViewFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/learner_fullname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/learner_fullname_size"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/imageViewBadge"
+            android:layout_toEndOf="@+id/imageViewBadge" />
+
+        <TextView
+            android:id="@+id/textViewHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/learner_hour"
+            android:layout_below="@+id/textViewFullname"
+            android:layout_toRightOf="@+id/imageViewBadge"
+            android:layout_toEndOf="@+id/imageViewBadge" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

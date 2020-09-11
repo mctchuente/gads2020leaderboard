@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/action_bar_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gads_icon"
+        android:foregroundGravity="center_vertical"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_toRightOf="@+id/action_bar_image"
+        android:layout_toEndOf="@+id/action_bar_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/google_africa" />
+
+    <TextView
+        android:id="@+id/action_bar_subtitle"
+        android:layout_toRightOf="@+id/action_bar_image"
+        android:layout_toEndOf="@+id/action_bar_image"
+        android:layout_below="@+id/action_bar_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/developer_scholarship"/>
+
+</RelativeLayout>

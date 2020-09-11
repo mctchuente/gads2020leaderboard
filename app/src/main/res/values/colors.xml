@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorSecondary">#FAFAFA</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorAccent2">#FFAE45</color>
+    <color name="colorAccent3">#EB8604</color>
+    <color name="colorAccent4">#717171</color>
+    <color name="buttonShadow">#2D2C2C</color>
+</resources>
