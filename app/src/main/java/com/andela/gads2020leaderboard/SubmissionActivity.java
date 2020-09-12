@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.andela.gads2020leaderboard.dialogs.ConfirmationDialog;
+import com.andela.gads2020leaderboard.dialogs.SubmissionresultDialog;
 import com.andela.gads2020leaderboard.service.AppExecutors;
 import com.andela.gads2020leaderboard.utils.Utility;
 import com.andela.gads2020leaderboard.utils.Validation;
@@ -159,13 +160,24 @@ public class SubmissionActivity extends AppCompatActivity implements Confirmatio
                 callapi.enqueue(new Callback<Void>() {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
-                        //
+                        SubmissionresultDialog dialog = new SubmissionresultDialog();
+                        Bundle arguments = new Bundle();
+                        arguments.putInt("result_image", 1);
+                        arguments.putString("result_message", getString(R.string.submission_successfull));
+                        dialog.setArguments(arguments);
+                        dialog.show(getSupportFragmentManager(), SubmissionresultDialog.class.getSimpleName());
                     }
 
                     @Override
                     public void onFailure(Call<Void> call, Throwable t) {
                         call.cancel();
                         Log.e(LOG_TAG, t.getLocalizedMessage(), t);
+                        SubmissionresultDialog dialog = new SubmissionresultDialog();
+                        Bundle arguments = new Bundle();
+                        arguments.putInt("result_image", 0);
+                        arguments.putString("result_message", getString(R.string.submission_not_successfull));
+                        dialog.setArguments(arguments);
+                        dialog.show(getSupportFragmentManager(), SubmissionresultDialog.class.getSimpleName());
                     }
                 });
             }

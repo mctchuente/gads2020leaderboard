@@ -24,4 +24,8 @@
     <string name="dialog_close">Close</string>
     <string name="confirmation_message">Are you sure ?</string>
     <string name="yes">Yes</string>
+    <string name="result_image">Result Image</string>
+    <string name="result_message">Result message</string>
+    <string name="submission_successfull">Submission Successfull</string>
+    <string name="submission_not_successfull">Submission not Successfull</string>
 </resources>
